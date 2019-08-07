@@ -1,0 +1,101 @@
+/* Sidebar Styles */
+.sidebar-container {
+    width:25%;
+    float: left;
+    position: fixed;
+    align-content:left;
+  }
+  /* Right main area Styles */
+  .right-container{
+    width: 68%;
+    float: right;
+
+  }
+  /*image style*/
+  .img{
+      margin: 20px;
+      border: 1px solid #000; 
+  }
+  /* main headings style*/
+  .heading1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 105px;
+    font color: #000000;
+    margin: 10px;
+  
+  }
+  .h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #61B229;
+  
+  }
+
+  .h3{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: rgb(41, 149, 168);
+    font-weight:Bold;
+  
+  }
+  /* list style */
+  .li{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font color: #4b4b4b;
+    margin: 10px;
+    
+}
+/* paragraph style */
+.paragraph{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    margin: 10px;
+}
+
+
+/* footer style */
+.footer {
+    display: block;
+    margin: auto;
+    padding: 15px 0px;
+    height: 40px;
+    width: 100%;
+height: auto;
+    background-color: rgb(44, 48, 40);
+    color: rgb(141, 238, 111);
+    text-align: center;
+  border: 1px solid green;
+ }
+
+/* footer icons style */
+ .footer-social-icons{
+     width: 100%;
+     height: auto;
+     margin: auto;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font color: green;
+ }
+
+/* button Style */
+  .button1 {
+    border-radius: 10px;
+    background: #73AD21; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1:hover {
+    background-color: rgb(51, 56, 51); /* Gray */
+    color: white;
+  }
+ 
