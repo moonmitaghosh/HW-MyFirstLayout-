@@ -1,91 +1,154 @@
+
+/* Container */
+.Container{
+  line-height: 1.65;
+  padding: 20px 20px;
+ 
+}
 /* Sidebar Styles */
-.sidebar-container {
-    width:25%;
+.col-1 {
+    flex-basis: 25%;
     float: left;
-    position: fixed;
-    align-content:left;
   }
   /* Right main area Styles */
-  .right-container{
-    width: 68%;
+  .col-2{
+   flex-basis: 65%;
     float: right;
 
   }
+  /* For desktop: */
+  @media only screen and (min-width: 900px) {
+    
+    
+    .Container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  }
+ /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+   
+    [class*="col-"] {
+      flex-basis: 100%;
+    }
+
+    }
+
   /*image style*/
   .img{
-      margin: 20px;
-      border: 1px solid #000; 
+      margin: 5px;
+     
   }
-  /* main headings style*/
-  .heading1{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   /*logo style*/
+   .logo{
+    margin: 10px;
+    align-content: center;
+   
+}
+
+  /* Welcome Heading */
+  .Wheading1{
+    font-family: 'Dancing Script', cursive;
     font-size: 105px;
-    font color: #000000;
+    color: rgb(61, 61, 61);
     margin: 10px;
   
   }
+
+  /* main headings style*/
+  .heading1{
+    font-family: 'Poiret One', cursive;
+    font-size: 8vw;
+    color: rgb(61, 61, 61);
+    margin: 10px;
+    font-weight: bold;
+    margin: 20px;
+  
+  }
   .h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-family: 'Poiret One', cursive;
+    font-size: 5vw;
     color: #61B229;
+    margin: 10px;
+   
+    font-weight: Bold;
   
   }
 
   .h3{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Lato', sans-serif;
     font-size: 25px;
-    color: rgb(41, 149, 168);
+    color: rgb(51, 56, 51);
     font-weight:Bold;
   
   }
+  .h4{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    color: #61B229;
+    margin: 10px;
+   font-style: italic;
+    font-weight: Bold;
+  }
+/* horizontal line */
+  .hr{
+    display: block;
+    height: 1px;
+    max-width: 65%;
+    border: 0;
+    padding: 0;
+    margin: 1em 0;
+    border-top:1px solid #676767;
+    align-content: center;
+  }
   /* list style */
   .li{
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font color: #4b4b4b;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    color:#73AD21;
+    font-weight: bolder;
     margin: 10px;
     
 }
 /* paragraph style */
 .paragraph{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
     color: rgb(80, 80, 80);
-    margin: 10px;
+    margin: 15px;
+    max-width: 900px;
+}
+.footer{
+  max-width: 400px;
+  line-height: 2;
+  float: center;
 }
 
-
-/* footer style */
-.footer {
-    display: block;
-    margin: auto;
-    padding: 15px 0px;
-    height: 40px;
-    width: 100%;
-height: auto;
-    background-color: rgb(44, 48, 40);
-    color: rgb(141, 238, 111);
-    text-align: center;
-  border: 1px solid green;
- }
-
-/* footer icons style */
- .footer-social-icons{
-     width: 100%;
-     height: auto;
+/* footer link style */
+ .a{
+     height: 20px;
      margin: auto;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    font color: green;
+     padding: 10px 10px;
+     font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    color:rgb(41, 41, 40) ;
+    
+ }
+ .a:hover{
+  color: rgb(67, 172, 67);
  }
 
 /* button Style */
   .button1 {
-    border-radius: 10px;
-    background: #73AD21; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
+    width: 300px;
+     height: 50px;
+     padding: 10PX 10PX;
+    background: rgba(255, 255, 255,0);
+  border: 1px solid rgb(41, 41, 40); 
+  border-radius: 10px;
+  margin: 10PX;
+    color:rgb(41, 41, 40);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -93,9 +156,27 @@ height: auto;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+  
   }
   .button1:hover {
-    background-color: rgb(51, 56, 51); /* Gray */
-    color: white;
+    color: #fff;
+    background-color: #73AD21;
+    
+  
+
+  }
+
+  .tool-container{
+    max-width: 1000px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto 0 auto;
+  }
+  .tool-img{
+    max-width: 60px;
+    height: auto;
+    padding:20px;
   }
  
